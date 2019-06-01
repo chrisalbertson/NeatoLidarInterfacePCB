@@ -16,7 +16,7 @@ This board (with the firmware from my other repository xxx) has the following fe
 ### jumper pins
 Instructions for how to jumpper the board are on the back side silk screen.  Youhave the otopn to use either type LIDAR and to power the LIDAR either from USB or an external 5V power supply.  The external supply would only be required of you are connecting to an unpowered hub. (A 500 mA supply is more than large enough.)
 
-### Whach type of LIDAR to use?
+### Which type of LIDAR to use?
 Both work equally well but there are differences.
 #### XV-11
 This unit look the best and is the most compact but it uses a slip ring and mechanical brushes to comutate the data and powert othe spinner scanner.   It seems to work but all mechanical brushes will eventualy fail.
