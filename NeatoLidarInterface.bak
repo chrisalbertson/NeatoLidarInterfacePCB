@@ -26,23 +26,12 @@ F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 5150 5050 50  0001 L CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
-U 1 1 5CE9F166
-P 5700 5050
-F 0 "R1" V 5907 5050 50  0000 C CNN
-F 1 "1K" V 5816 5050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 5050 50  0001 C CNN
-F 3 "~" H 5700 5050 50  0001 C CNN
-	1    5700 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5CE9F90D
 P 4700 4400
 F 0 "J3" H 4618 4075 50  0000 C CNN
 F 1 "Conn_01x02" H 4618 4166 50  0000 C CNN
-F 2 "Connector_JST:JST_JWPF_B02B-JWPF-SK-R_1x02_P2.00mm_Vertical" H 4700 4400 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 4700 4400 50  0001 C CNN
 F 3 "~" H 4700 4400 50  0001 C CNN
 	1    4700 4400
 	-1   0    0    1   
@@ -53,7 +42,7 @@ U 1 1 5CEA01E9
 P 4700 3100
 F 0 "J2" H 4650 3350 50  0000 L CNN
 F 1 "Conn_01x04" H 4650 3450 50  0000 L CNN
-F 2 "Connector_JST:JST_JWPF_B04B-JWPF-SK-R_1x04_P2.00mm_Vertical" H 4700 3100 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4700 3100 50  0001 C CNN
 F 3 "~" H 4700 3100 50  0001 C CNN
 	1    4700 3100
 	-1   0    0    -1  
@@ -64,7 +53,7 @@ U 1 1 5CEA0E19
 P 4700 1950
 F 0 "J1" H 4618 1625 50  0000 C CNN
 F 1 "Conn_01x02" H 4618 1716 50  0000 C CNN
-F 2 "Connector_JST:JST_JWPF_B02B-JWPF-SK-R_1x02_P2.00mm_Vertical" H 4700 1950 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 4700 1950 50  0001 C CNN
 F 3 "~" H 4700 1950 50  0001 C CNN
 	1    4700 1950
 	-1   0    0    1   
@@ -99,8 +88,6 @@ Text Notes 2700 4450 0    50   ~ 0
 2 - RED, Nominal 3 volts to motor
 Text Notes 2550 2050 0    50   ~ 0
 Optional External Power Input\n    1 - Ground\n    2 - +5 V
-Wire Wire Line
-	5550 5050 5350 5050
 $Comp
 L power:GND #PWR04
 U 1 1 5CEC1135
@@ -152,18 +139,18 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5CEF9ED5
-P 4900 3800
-F 0 "#PWR02" H 4900 3550 50  0001 C CNN
-F 1 "GND" H 4905 3627 50  0000 C CNN
-F 2 "" H 4900 3800 50  0001 C CNN
-F 3 "" H 4900 3800 50  0001 C CNN
-	1    4900 3800
+P 4900 3550
+F 0 "#PWR02" H 4900 3300 50  0001 C CNN
+F 1 "GND" H 4905 3377 50  0000 C CNN
+F 2 "" H 4900 3550 50  0001 C CNN
+F 3 "" H 4900 3550 50  0001 C CNN
+	1    4900 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6950 3200 4900 3200
 Wire Wire Line
-	4900 3300 4900 3800
+	4900 3300 4900 3550
 Wire Wire Line
 	5350 3550 5350 3100
 Wire Wire Line
@@ -173,13 +160,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 4500 5350 3650
 Wire Wire Line
-	6400 4200 6400 5050
-Wire Wire Line
-	6400 4200 6950 4200
-Wire Wire Line
 	6850 4400 6950 4400
-Wire Wire Line
-	5850 5050 6400 5050
 Wire Wire Line
 	6000 4300 5100 4300
 Wire Wire Line
@@ -222,4 +203,25 @@ Wire Wire Line
 Connection ~ 8700 2700
 Wire Wire Line
 	8700 2700 8700 3000
+Text GLabel 8200 3100 2    50   Input ~ 0
+PB_10
+Wire Wire Line
+	8200 3100 8150 3100
+Wire Wire Line
+	5500 5050 5350 5050
+$Comp
+L Device:R R1
+U 1 1 5CE9F166
+P 5650 5050
+F 0 "R1" V 5857 5050 50  0000 C CNN
+F 1 "1K" V 5766 5050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 5050 50  0001 C CNN
+F 3 "~" H 5650 5050 50  0001 C CNN
+	1    5650 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5800 5050 5950 5050
+Text GLabel 5950 5050 2    50   Input ~ 0
+PB_10
 $EndSCHEMATC
